@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!--css-->
+    <link rel="stylesheet" href="style.css">
+    <!--titulo da aba-->
+    <title>Brainny | Landing Page</title>
+</head>
+<body>
+    <!--parte superior botões-->
+    <header>
+        <nav>
+            <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://brainny.cc/aboutUs">Sobre nós</a></li>
+                <li><a href="https://brainny.cc/services">Serviços</a></li>
+            </ul>
+        </nav>
+    <!--botão menu / hamburguer -->
+    <button class="menu-icon"><img src="menu.png"></button>
+
+    </header>
+    <main>
+        <!--logo da empresa-->
+        <section class="main_right">
+            <img src="https://cdn-images-1.medium.com/max/1294/1*JVQ6kVSZO9iQoFA10difhQ@2x.png" width="100%" style="padding: 4rem;">
+        </section>
+
+        <!--descrição e titulo-->
+        <section class="main_left">
+
+            <!--titulo-->
+            <h1><b>Criatividade e inovação</b> <br>é o que nos move.</h1>
+
+            <!--descrição-->
+            <p>Desenvolvimento de Sistemas Web, Aplicativos e serviços de Outsourcing. Agregar valor ao seu negócio é o nosso objetivo.</p>
+            
+            <!--botões principais / site e contato-->
+            <div class="main_left-btn">
+                <button><a href="https://brainny.cc/">Site</a></button>
+                <button><a href="https://brainny.cc/contact">Contato</a></button>
+            </div>
+        </section>
+    </main>
+    <!--JavaScript-->
+    <script>
+        var menu = document.querySelector('nav');
+        var menuIcon = document.querySelector('.menu-icon');
+        var closeIcon = document.querySelector('.close-icon');
+        menuIcon.addEventListener('click',()=>{
+            menu.classList.add('active');
+        });
+        closeIcon.addEventListener('click',()=>{
+            menu.classList.add('active');
+        });
+    </script>
+</body>
+</html>
